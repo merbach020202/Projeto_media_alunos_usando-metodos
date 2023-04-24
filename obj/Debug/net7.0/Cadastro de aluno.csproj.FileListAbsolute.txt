@@ -1,0 +1,15 @@
+C:\Users\44850641822\Desktop\BackEnd\Classes\Cadastro de aluno\bin\Debug\net7.0\Cadastro de aluno.exe
+C:\Users\44850641822\Desktop\BackEnd\Classes\Cadastro de aluno\bin\Debug\net7.0\Cadastro de aluno.deps.json
+C:\Users\44850641822\Desktop\BackEnd\Classes\Cadastro de aluno\bin\Debug\net7.0\Cadastro de aluno.runtimeconfig.json
+C:\Users\44850641822\Desktop\BackEnd\Classes\Cadastro de aluno\bin\Debug\net7.0\Cadastro de aluno.dll
+C:\Users\44850641822\Desktop\BackEnd\Classes\Cadastro de aluno\bin\Debug\net7.0\Cadastro de aluno.pdb
+C:\Users\44850641822\Desktop\BackEnd\Classes\Cadastro de aluno\obj\Debug\net7.0\Cadastro de aluno.csproj.AssemblyReference.cache
+C:\Users\44850641822\Desktop\BackEnd\Classes\Cadastro de aluno\obj\Debug\net7.0\Cadastro de aluno.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\44850641822\Desktop\BackEnd\Classes\Cadastro de aluno\obj\Debug\net7.0\Cadastro de aluno.AssemblyInfoInputs.cache
+C:\Users\44850641822\Desktop\BackEnd\Classes\Cadastro de aluno\obj\Debug\net7.0\Cadastro de aluno.AssemblyInfo.cs
+C:\Users\44850641822\Desktop\BackEnd\Classes\Cadastro de aluno\obj\Debug\net7.0\Cadastro de aluno.csproj.CoreCompileInputs.cache
+C:\Users\44850641822\Desktop\BackEnd\Classes\Cadastro de aluno\obj\Debug\net7.0\Cadastro de aluno.dll
+C:\Users\44850641822\Desktop\BackEnd\Classes\Cadastro de aluno\obj\Debug\net7.0\refint\Cadastro de aluno.dll
+C:\Users\44850641822\Desktop\BackEnd\Classes\Cadastro de aluno\obj\Debug\net7.0\Cadastro de aluno.pdb
+C:\Users\44850641822\Desktop\BackEnd\Classes\Cadastro de aluno\obj\Debug\net7.0\Cadastro de aluno.genruntimeconfig.cache
+C:\Users\44850641822\Desktop\BackEnd\Classes\Cadastro de aluno\obj\Debug\net7.0\ref\Cadastro de aluno.dll
