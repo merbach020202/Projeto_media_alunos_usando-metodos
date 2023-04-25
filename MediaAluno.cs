@@ -30,44 +30,6 @@ namespace Cadastro_de_aluno
 
 
 
-        public void Perguntas()
-        {
-            Console.Write(@$"Digite o nome do aluno: 
-");
-            nome = Console.ReadLine();
-
-            Console.Write(@$"
-Digite o nome do curso: 
-");
-            curso = Console.ReadLine();
-
-            Console.Write(@$"
-Digite a idade do aluno: 
-");
-            idade = int.Parse(Console.ReadLine());
-
-            Console.Write(@$"
-Digite o RG do aluno: 
-");
-            RG = Console.ReadLine();
-
-            Console.Write(@$"
-Digite se o aluno é bolsista: (sim ou não) 
-");
-            bolsista = Console.ReadLine().ToLower();
-
-            Console.Write(@$"
-Digite a média final do aluno: 
-");
-            mediaFinal = float.Parse(Console.ReadLine());
-
-            Console.Write(@$"
-Digite a mensalidade paga pelo aluno: 
-");
-            valorMensalidade = float.Parse(Console.ReadLine());
-        }
-
-
         public float Bolsista()
         {
             if (bolsista == "sim")
