@@ -7,6 +7,7 @@ namespace Cadastro_de_aluno
 {
     public class MediaAluno
     {
+
         public string nome;
         public string curso;
         public int idade;
@@ -15,18 +16,159 @@ namespace Cadastro_de_aluno
         public float mediaFinal;
         public float valorMensalidade;
 
+
+        static void BarraCarregamento(string texto, int quantidadePontinhos, int tempo)
+        {
+            Console.Write(texto);
+
+            for (int i = 0; i < quantidadePontinhos; i++)
+            {
+                Console.Write($".");
+                Thread.Sleep(tempo);
+            }
+        }
+
+
+
+        public void Perguntas()
+        {
+            Console.Write(@$"Digite o nome do aluno: 
+");
+            nome = Console.ReadLine();
+
+            Console.Write(@$"
+Digite o nome do curso: 
+");
+            curso = Console.ReadLine();
+
+            Console.Write(@$"
+Digite a idade do aluno: 
+");
+            idade = int.Parse(Console.ReadLine());
+
+            Console.Write(@$"
+Digite o RG do aluno: 
+");
+            RG = Console.ReadLine();
+
+            Console.Write(@$"
+Digite se o aluno é bolsista: (sim ou não) 
+");
+            bolsista = Console.ReadLine().ToLower();
+
+            Console.Write(@$"
+Digite a média final do aluno: 
+");
+            mediaFinal = float.Parse(Console.ReadLine());
+
+            Console.Write(@$"
+Digite a mensalidade paga pelo aluno: 
+");
+            valorMensalidade = float.Parse(Console.ReadLine());
+        }
+
+
+        public float Bolsista()
+        {
+            if (bolsista == "sim")
+            {
+                if (mediaFinal > 8)
+                {
+                    Console.WriteLine(@$"
+    O desconto aplicado será de 50%");
+                    float valorComDesconto = (valorMensalidade / 2);
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine(@$"
+    O valor com desconto será de: R$ {valorComDesconto}");
+                    Console.ResetColor();
+
+                    BarraCarregamento(@"
+    Imprimindo dados", 8, 500);
+
+                    VerDados();
+
+                }
+                else if (mediaFinal > 6 && mediaFinal <= 8)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine(@$"
+    O desconto aplicado será de 30%");
+                    Console.ResetColor();
+                    float valorComDesconto = (valorMensalidade * 0.7F);
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine(@$"
+    O valor com desconto será de R$ {valorComDesconto}");
+                    Console.ResetColor();
+                    BarraCarregamento(@"
+    Imprimindo dados", 8, 500);
+
+                    VerDados();
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine($"VOÇÊ NÃO TERÁ DIREITO A DESCONTO!");
+                    Console.ResetColor();
+
+                    BarraCarregamento(@"
+    Imprimindo dados", 8, 500);
+
+                    VerDados();
+                }
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(@$"
+    VOÇÊ NÃO TERÁ DIREITO A DESCONTO!");
+                Console.ResetColor();
+
+                BarraCarregamento(@"
+    Imprimindo dados", 8, 500);
+
+                VerDados();
+
+            }
+            return 0;
+        }
+
+
+
         public void VerMediaFinal()
         {
-            Console.WriteLine($"média final do aluno: {mediaFinal}");
+            Console.WriteLine($"média final do {nome}: {mediaFinal}");
         }
-        
+
 
         public void VerMensalidade()
         {
             Console.WriteLine($" Mensalidade paga pelo aluno: {valorMensalidade}");
         }
 
-        
+
+        public void VerDados()
+        {
+            Console.WriteLine(@$"
+            
+    Dados do aluno:
+
+    Nome: {nome}
+
+    Curso: {curso}
+            
+    Idade: {idade}
+            
+    RG: {RG}
+            
+    Bolsista: {bolsista}
+            
+    Media: {mediaFinal}
+            
+    Mensalidade: {valorMensalidade}
+            ");
+
+        }
+
     }
 }
 

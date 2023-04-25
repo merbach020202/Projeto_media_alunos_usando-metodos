@@ -19,53 +19,9 @@ using Cadastro_de_aluno;
 MediaAluno Media = new MediaAluno();
 
 
+    Media.Perguntas();
 
-Console.Write(@$"Digite o nome do aluno: 
-");
-Media.nome = Console.ReadLine();
+    Media.Bolsista();
 
-Console.Write(@$"Digite o nome do curso: 
-");
-Media.curso = Console.ReadLine();
 
-Console.Write(@$"Digite a idade do aluno: 
-");
-Media.idade = int.Parse(Console.ReadLine());
-
-Console.Write(@$"Digite o RG do aluno: 
-");
-Media.RG = Console.ReadLine();
-
-Console.Write(@$"Digite se o aluno é bolsista: (sim ou não) 
-");
-Media.bolsista = Console.ReadLine();
-
-Console.Write(@$"Digite a média final do aluno: 
-");
-Media.mediaFinal = float.Parse(Console.ReadLine());
-
-Console.Write(@$"Digite a mensalidade paga pelo aluno: 
-");
-Media.valorMensalidade = float.Parse(Console.ReadLine());
-
-if (Media.bolsista == "sim")
-{
-    if (Media.mediaFinal > 8)
-    {
-
-    }
-    else if (Media.mediaFinal > 6 && Media.mediaFinal <= 8)
-    {
-
-    }
-    else
-    {
-
-    }
-}
-else
-{
-    Console.WriteLine($"{Media.mediaFinal}");
     
-}
-
