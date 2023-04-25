@@ -125,8 +125,6 @@ namespace Cadastro_de_aluno
     Bolsista: {bolsista}
             
     Media: {mediaFinal}
-            
-    Mensalidade: {valorMensalidade}
             ");
 
         }
